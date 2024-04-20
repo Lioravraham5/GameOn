@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.OrderDetailsFragment">
+
+    <!--Labels layout: -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/order_details_labels_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--details: -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/order_details_fragment_LBL_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:visibility="invisible"/>
+
+        <!--field name: title -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/order_details_fragment_LBL_field_name_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Field name: "
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible"/>
+
+        <!--field name: -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/order_details_fragment_LBL_field_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Field name: "
+            android:textColor="@color/blue_800_dark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible"/>
+
+        <!--field type: title-->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/order_details_fragment_LBL_field_type_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Field Type: "
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:visibility="invisible"/>
+
+        <!--field type: -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/order_details_fragment_LBL_field_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Field Type: "
+            android:textColor="@color/blue_800_dark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible"/>
+
+        <!--Address: -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/order_details_fragment_LBL_address_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address: "
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:visibility="invisible"/>
+
+        <!--Address: -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/order_details_fragment_LBL_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address: "
+            android:textColor="@color/blue_800_dark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</FrameLayout>

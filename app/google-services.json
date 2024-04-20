@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "922766219088",
+    "firebase_url": "https://gameon-beefc-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "gameon-beefc",
+    "storage_bucket": "gameon-beefc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922766219088:android:9ea5fa24741f7028b7fe55",
+        "android_client_info": {
+          "package_name": "com.example.gameon"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGVhsk_Hd6kmsjYG5SgW8B8ZB7wWlwKYs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

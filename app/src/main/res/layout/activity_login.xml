@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screens.LoginActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/login_page_blue_layout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_background_blue">
+
+        <!--login in text-->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/login_page_LBL_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--input layout-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/login_page_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp"
+        android:layout_below="@id/login_page_blue_layout"
+        android:layout_centerInParent="true">
+
+        <!--user name-->
+        <EditText
+            android:id="@+id/login_page_user_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User name"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginBottom="25dp"
+            android:drawableLeft="@drawable/user"
+            android:gravity="left"/>
+
+        <!--password -->
+        <EditText
+            android:id="@+id/login_page_password_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textStyle="bold"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/password"
+            android:gravity="left"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--buttons layout-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/welcome_page_buttons_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/login_page_input_layout"
+        android:gravity="center">
+
+        <!--login button-->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_page_BTN_login"
+            android:layout_width="@dimen/welcome_page_buttons_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Login"
+            android:backgroundTint="@color/blue_800_dark"
+            tools:ignore="HardcodedText"
+            android:textSize="25sp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screens.FieldActivity">
+
+    <!--Labels layout: -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/field_labels_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <!--field name title: -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/field_LBL_field_name_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Field name: "
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!--field name: -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/field_LBL_field_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Field name"
+            android:textColor="@color/blue_800_dark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!--field type: title -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/field_LBL_field_type_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Field Type: "
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            />
+
+        <!--field type: -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/field_LBL_field_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Field Type: "
+            android:textColor="@color/blue_800_dark"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <!--Address: title -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/field_LBL_address_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address: "
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <!--Address: -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/field_LBL_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address: "
+            android:textColor="@color/blue_800_dark"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--current orders label layout text: -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/current_orders_label_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/field_labels_layout">
+
+        <!--current orders field text: -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/field_LBL_currentOrders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Orders"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_above="@id/field_current_orders_layout"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--Current Orders layout: -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/field_current_orders_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/current_orders_label_layout"
+        android:padding="15dp">
+
+        <!--Current Orders frame: -->
+        <FrameLayout
+            android:id="@+id/field_FRAME_current_orders"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:background="@drawable/info_window_background"
+            android:visibility="visible"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <!--input layout layout: -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/field_buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_below="@+id/field_current_orders_layout">
+
+        <!--start time layout-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/field_start_time_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="20dp">
+
+            <!--select start time button-->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/field_BTN_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select date and time"
+                android:backgroundTint="@color/blue_800_dark"
+                tools:ignore="HardcodedText"
+                android:textSize="20sp"/>
+
+            <!--start date label-->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/field_LBL_start_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textColor="@color/blue_800_dark"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"
+                android:gravity="start"/>
+
+            <!--start time label-->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/field_LBL_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start Time:"
+                android:textColor="@color/blue_800_dark"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"
+                android:gravity="start"/>
+
+            <!--end time label -->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/field_LBL_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="End Time:"
+                android:textColor="@color/blue_800_dark"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="20dp"/>
+
+            <!--select start time button-->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/field_BTN_save_order"
+                android:layout_width="@dimen/select_start_and_end_time_width_button_170dp"
+                android:layout_height="wrap_content"
+                android:text="Save order"
+                android:backgroundTint="@color/green_700_primary"
+                tools:ignore="HardcodedText"
+                android:layout_gravity="center"
+                android:textSize="20sp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</RelativeLayout>

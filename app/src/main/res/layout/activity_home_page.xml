@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screens.HomePageActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/homepage_hello_username_layout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_background_blue">
+
+        <!--hello user name text-->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/homepage_LBL_hello"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <!--hello user name text-->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/homepage_LBL_hello_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="user name"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--buttons layout-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/homepage_buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!--my orders in button-->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/homepage_BTN_my_orders"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="My Orders"
+            android:backgroundTint="@color/blue_800_dark"
+            tools:ignore="HardcodedText"
+            android:textSize="25sp"
+            android:layout_marginBottom="16dp"
+            android:gravity="start"
+            app:icon="@drawable/list_icon_24dp_white"/>
+
+        <!--Create Field Order button-->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/homepage_BTN_create_field_order"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Create Field Order"
+            android:backgroundTint="@color/blue_800_dark"
+            tools:ignore="HardcodedText"
+            android:textSize="25sp"
+            android:gravity="start"
+            app:icon="@drawable/plus_icon_24dp_white"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</RelativeLayout>

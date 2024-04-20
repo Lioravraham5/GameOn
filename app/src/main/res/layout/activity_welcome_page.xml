@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/intro_background"
+    tools:context=".Screens.WelcomePageActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/welcome_page_game_on_image_layout"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/welcome_page_buttons_layout">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/welcome_page_IMG_game_on"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:scaleType="fitCenter"
+                app:shapeAppearanceOverlay="@style/radius_corner_25dp"
+                android:src="@drawable/game_on_loggo" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!--buttons layout-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/welcome_page_buttons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="16dp"
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!--Sign in button-->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/welcome_page_BTN_sign_in"
+                android:layout_width="@dimen/welcome_page_buttons_width"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sign In"
+                android:backgroundTint="@color/blue_800_dark"
+                tools:ignore="HardcodedText"
+                android:textSize="32sp"/>
+
+            <!--log in button-->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/welcome_page_BTN_login"
+                android:layout_width="@dimen/welcome_page_buttons_width"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Login"
+                android:backgroundTint="@color/blue_800_dark"
+                tools:ignore="HardcodedText"
+                android:textSize="32sp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</RelativeLayout>
