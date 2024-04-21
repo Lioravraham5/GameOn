@@ -130,7 +130,35 @@ public class SignInActivity extends AppCompatActivity {
             passwordMissingEvent();
             return false;
         }
+
+        if(sign_in_page_user_name_edit_text.getText().toString().length() < 4){
+            shortUserNameEvent();
+            return false;
+        }
+
+        if(sign_in_page_password_edit_text.getText().toString().length() < 4){
+            shortPasswordEvent();
+            return false;
+        }
+
+        if(sign_in_page_full_name_edit_text.getText().toString().length() < 4){
+            shortFullNameEvent();
+            return false;
+        }
+
         return true;
+    }
+
+    private void shortFullNameEvent() {
+        sign_in_page_full_name_edit_text.setError("Your full name is to short!");
+    }
+
+    private void shortPasswordEvent() {
+        sign_in_page_password_edit_text.setError("Your password is to short!");
+    }
+
+    private void shortUserNameEvent() {
+        sign_in_page_user_name_edit_text.setError("Your user name is to short!");
     }
 
     private void passwordMissingEvent() {
